@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimator</title>
+    <script src="https://kit.fontawesome.com/2c348bb9ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/estimator.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- nav comtainer  -->
+        <nav class="nav">
+            <header><h1>Estimator</h1></header>
+            <ul class="navbar">
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </nav>
+        <!-- calculator container -->
+        <div class="calc">
+            <div class="main">
+              <div class="content">
+                  <!-- bill box input -->
+                
+                  <div class="tip">
+                      <h6>TIP AMOUNT</h6>
+                      <input type="text" id="input-el"  name="" placeholder="$" >
+                  </div>
+                  <!-- tips percentage -->
+                  <div class="tip-btns">
+                      <h6>select tip %</h6>
+                      <div class="btn-box">
+                          <button class="btn first-b">5%</button>
+                          <button class="btn second-b">10%</button>
+                          <button class="btn third-b">15%</button>
+                          <button class="btn forth-b">25%</button>
+                          <button class="btn fifth-b">50%</button>
+                          <button class="btn six-b">custom</button>
+                      </div>
+                  </div>
+                  <!-- number of people -->
+                  <div class="number">
+                      <h6>Details of transaction</h6>
+                    
+                      <div>
+                          <label for="">Amount of Contract</label>
+                          <br><br>
+                          <input type="number" placeholder="Enter Amount" id="bill-el" >
+                      </div>
+                  </div>
+      
+
+              </div>
+            </div>
+            <!-- side container -->
+            <div class="aside">
+                <h4 class="save-link" id="open-transactions"><span class="arror-key"><i class="fas fa-arrow-right"></i></span>  My Transactions</h4>
+                <!-- tip-box -->
+                <div class="net-box">
+                    <div class="net-amount">
+                        <div class="text">
+                            <p>Net Amount <br><span>/Net amount</span></p>
+                        </div>
+                        <div class="amount">
+                            <p>$ <span id="amount-el">0.00</span></p>
+                        </div>
+                    </div>
+                    <div class="motion">
+                        <div class="wave">
+                            <span style="--i:1">D</span>
+                            <span style="--i:2">E</span>
+                            <span style="--i:3">T</span>
+                            <span style="--i:4">W</span>
+                            <span style="--i:5">I</span>
+                            <span style="--i:6">N</span>
+                            <span style="--i:7">S</span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span style="--i:8">I</span>
+                            <span style="--i:9">N</span>
+                            <span style="--i:10">N</span>
+                            <span style="--i:11">O</span>
+                            <span style="--i:12">T</span>
+                            <span style="--i:13">I</span>
+                            <span style="--i:14">O</span>
+                            <span style="--i:15">N</span>
+                            <span style="--i:16">S</span>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- reset button -->
+                <div class="reset">
+                    <p class="show-text">Saved</p>
+                    <button class="btn-save" id="btn-save">SAVE</button>
+                    <button class="btn-reset" id="btn-reset">RESET</button>
+                </div>
+            </div>
+        </div>
+        <div class="reset-box" id="reset-box">
+            <div class="btn-box">
+                <p>Are you sure you want to reset data?</p>
+                <br>
+              <small>by clicking ok ,your data will be lost</small>
+              <div class="btns">
+                  <button id="cancel-btn">cancel</button><br>
+                  <button id="clear-btn">ok</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- background when clicked -->
+        <div class="bg" id="bg"></div>
+        <!-- savings transactions -->
+        <div class="savings-trasaction" id="savings-trasaction">
+            <div class="remo-div">
+                <span class="first"></span>
+                <span class="sec"></span>
+            </div>
+                
+            <h3>Your transactions</h3>
+          <ul class="ul-el" id="ul-el">
+
+          </ul>
+        </div>
+        <!-- footer section -->
+        <div class="footer"><p>Designed with &#10084; by <span style="color: rgb(116, 7, 116);">Detwins Innovations </span>. <br>&copy; copyright 2021 </p>
+        </div>
+    </div>
+    <script src="./script/tips.js"></script>
+</body>
+</html>
