@@ -16,6 +16,8 @@ const savingsTrans = document.getElementById('savings-trasaction');
 const removeIcon = document.querySelector('.remo-div')
 let input ;
 
+inputEl.disabled = true
+
 ulEl.addEventListener('click',deleteCheck);
 
 
