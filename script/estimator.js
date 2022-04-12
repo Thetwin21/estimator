@@ -89,14 +89,16 @@ function trans(){
     liBox.classList.add('savelist-box');
     let liEl = document.createElement('li');
     liEl.classList.add('save-list')
-    liBox.appendChild(liEl);
     liEl.textContent = amountEl.innerText;
+    
+    liBox.appendChild(liEl);
     let trashBtn = document.createElement('button')
     trashBtn.textContent = 'del'
     trashBtn.classList.add('trash-btn');
     liBox.appendChild(trashBtn);
     if (inputEl.value !== '' && amountEl.innerText !== 0.00){
-         ulEl.appendChild(liBox)
+        ulEl.appendChild(liBox)
+        saveLocalItems(amountEl.innerHTML);
     alert('saved')
     }else{
         alert('input values')
@@ -136,4 +138,16 @@ function deleteCheck(e){
   document.querySelectorAll(".tiles__wrapper").forEach(box => 
       box.classList.add("tiles__animation")  
   );
+
+  function saveLocalItems(liItem) {
+    //    check storage
+    let listItems;
+    if(localStorage.getItem('liBox') === null) {
+        let listItems = []
+    }else {
+        listItems = JSON.parse(localStorage.getItem('liBox'))
+    }
+    listItems.push(liItem)
+    localStorage.setItem('liBox', JSON.stringify(listItems))
+  }
 });
