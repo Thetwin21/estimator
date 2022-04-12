@@ -92,7 +92,6 @@ nav header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
-  margin-top: -6rem;
   gap: 2em;
   border-radius: 10px;
   box-shadow: 5px 10px 30px #fff;
