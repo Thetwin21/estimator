@@ -47,7 +47,6 @@ button {
 
 /* nav container  */
 nav {
-  /* position: absolute; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -92,7 +91,8 @@ nav header {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* margin: auto; */
+  margin: auto;
+  margin-top: -6rem;
   gap: 2em;
   border-radius: 10px;
   box-shadow: 5px 10px 30px #fff;
@@ -404,7 +404,8 @@ nav header {
 .footer {
   width: 100%;
   text-align: center;
-  position: fixed;
+  margin-top: 10px;
+  position: absolute;
   bottom: 0;
   padding-bottom: 10px;
 }
@@ -470,6 +471,7 @@ nav header {
   .calc {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 2rem 0;
     gap: 2em;
     /* padding: none; */
   }
@@ -480,6 +482,7 @@ nav header {
     width: 100vw;
     height: 100%;
   }
+
 
   .calc .main {
     margin-top: 10px;
